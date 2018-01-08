@@ -1,0 +1,21 @@
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\bin\x64\Release\NetMonitor.exe.config
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\bin\x64\Release\NetMonitor.exe
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\bin\x64\Release\NetMonitor.pdb
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.NetMonitor.resources
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.Properties.Resources.resources
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.Resource.resources
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.csproj.GenerateResource.Cache
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.csproj.CoreCompileInputs.cache
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.exe
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.pdb
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\bin\x64\Release\NetMonitor.exe.config
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\bin\x64\Release\NetMonitor.exe
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\bin\x64\Release\NetMonitor.pdb
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.NetMonitor.resources
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.Properties.Resources.resources
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.Resource.resources
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.csproj.GenerateResource.Cache
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.csproj.CoreCompileInputs.cache
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.exe
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.pdb
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Release\NetMonitor.csprojResolveAssemblyReference.cache

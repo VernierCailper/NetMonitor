@@ -65,3 +65,36 @@ E:\C#\网速监控\公测版\NetMonitor\obj\Release\NetMonitor.csproj.GenerateRe
 E:\C#\网速监控\公测版\NetMonitor\obj\Release\NetMonitor.exe
 E:\C#\网速监控\公测版\NetMonitor\obj\Release\NetMonitor.pdb
 E:\C#\网速监控\公测版\NetMonitor\obj\Release\NetMonitor.csprojResolveAssemblyReference.cache
+E:\C#\网速监控\公测版20171004\NetMonitor\bin\Release\NetMonitor.exe.config
+E:\C#\网速监控\公测版20171004\NetMonitor\bin\Release\NetMonitor.exe
+E:\C#\网速监控\公测版20171004\NetMonitor\bin\Release\NetMonitor.pdb
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.csprojResolveAssemblyReference.cache
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.NetMonitor.resources
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.Properties.Resources.resources
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.Resource.resources
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.csproj.GenerateResource.Cache
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.csproj.CoreCompileInputs.cache
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.exe
+E:\C#\网速监控\公测版20171004\NetMonitor\obj\Release\NetMonitor.pdb
+E:\C#\网速监控\公测版20171105\NetMonitor\bin\Release\NetMonitor.exe.config
+E:\C#\网速监控\公测版20171105\NetMonitor\bin\Release\NetMonitor.exe
+E:\C#\网速监控\公测版20171105\NetMonitor\bin\Release\NetMonitor.pdb
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.csprojResolveAssemblyReference.cache
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.NetMonitor.resources
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.Properties.Resources.resources
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.Resource.resources
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.csproj.GenerateResource.Cache
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.csproj.CoreCompileInputs.cache
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.exe
+E:\C#\网速监控\公测版20171105\NetMonitor\obj\Release\NetMonitor.pdb
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\bin\Release\NetMonitor.exe.config
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\bin\Release\NetMonitor.exe
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\bin\Release\NetMonitor.pdb
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.csprojResolveAssemblyReference.cache
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.NetMonitor.resources
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.Properties.Resources.resources
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.Resource.resources
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.csproj.GenerateResource.Cache
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.csproj.CoreCompileInputs.cache
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.exe
+C:\Users\Vernier Cailper\Desktop\公测版20171105 cat\NetMonitor\obj\Release\NetMonitor.pdb

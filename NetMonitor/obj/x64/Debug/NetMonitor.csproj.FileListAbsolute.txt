@@ -1,0 +1,11 @@
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\bin\x64\Debug\NetMonitor.exe.config
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\bin\x64\Debug\NetMonitor.exe
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\bin\x64\Debug\NetMonitor.pdb
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.csprojResolveAssemblyReference.cache
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.NetMonitor.resources
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.Properties.Resources.resources
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.Resource.resources
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.csproj.GenerateResource.Cache
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.csproj.CoreCompileInputs.cache
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.exe
+E:\C#\网速监控\公测版20171105 cat\NetMonitor\obj\x64\Debug\NetMonitor.pdb

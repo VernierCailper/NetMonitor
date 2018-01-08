@@ -56,7 +56,7 @@
             this.pictureBox.Size = new System.Drawing.Size(59, 56);
             this.pictureBox.TabIndex = 2;
             this.pictureBox.TabStop = false;
-            this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Exit_Menu_MouseDown);
+            this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NetMonitor_MouseDown);
             // 
             // Menu
             // 
@@ -112,11 +112,12 @@
             this.Lable_SpeedDown.ContextMenuStrip = this.Menu;
             this.Lable_SpeedDown.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Lable_SpeedDown.ForeColor = System.Drawing.Color.Black;
-            this.Lable_SpeedDown.Location = new System.Drawing.Point(65, 33);
+            this.Lable_SpeedDown.Location = new System.Drawing.Point(66, 33);
             this.Lable_SpeedDown.Name = "Lable_SpeedDown";
             this.Lable_SpeedDown.Size = new System.Drawing.Size(84, 14);
             this.Lable_SpeedDown.TabIndex = 1;
             this.Lable_SpeedDown.Text = "下载：0B/S";
+            this.Lable_SpeedDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NetMonitor_MouseDown);
             // 
             // Lable_SpeedUP
             // 
@@ -125,11 +126,12 @@
             this.Lable_SpeedUP.ContextMenuStrip = this.Menu;
             this.Lable_SpeedUP.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Lable_SpeedUP.ForeColor = System.Drawing.Color.Black;
-            this.Lable_SpeedUP.Location = new System.Drawing.Point(65, 9);
+            this.Lable_SpeedUP.Location = new System.Drawing.Point(66, 9);
             this.Lable_SpeedUP.Name = "Lable_SpeedUP";
             this.Lable_SpeedUP.Size = new System.Drawing.Size(84, 14);
             this.Lable_SpeedUP.TabIndex = 0;
             this.Lable_SpeedUP.Text = "上传：0B/S";
+            this.Lable_SpeedUP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NetMonitor_MouseDown);
             // 
             // panel
             // 
@@ -143,6 +145,7 @@
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(193, 56);
             this.panel.TabIndex = 3;
+            this.panel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NetMonitor_MouseDown);
             // 
             // Lable_TotalUP
             // 

@@ -11,7 +11,6 @@ namespace NetMonitor
     {
         int InterfaceSelect = 0;
         int ZreoTimes = 0;
-        int NetworkInterfacesLength = 0;
         bool Start = false;
         private NetworkInterface[] nicArr;      //网卡集合
         private System.Timers.Timer timers; 
@@ -42,7 +41,6 @@ namespace NetMonitor
 
         void timer_Elapsed(object sender, ElapsedEventArgs e)
         {
-           
             this.Invoke((EventHandler)delegate
             {
                 UpdateNetworkInterface();
@@ -51,7 +49,7 @@ namespace NetMonitor
 
         private void SetGifBackground()
         {
-            Image gif = global::NetMonitor.Resource.doge;
+            Image gif = Resource.Cat;
             System.Drawing.Imaging.FrameDimension fd = new System.Drawing.Imaging.FrameDimension(gif.FrameDimensionsList[0]);
             int count = gif.GetFrameCount(fd);    //获取帧数(gif图片可能包含多帧，其它格式图片一般仅一帧)
             System.Windows.Forms.Timer giftimer = new System.Windows.Forms.Timer();
@@ -60,14 +58,24 @@ namespace NetMonitor
             Image bgImg = null;
             giftimer.Tick += (s, e) =>
             {
-                if (i >= count) { i = 0; }
-                gif.SelectActiveFrame(fd, i);
-                System.IO.Stream stream = new System.IO.MemoryStream();
-                gif.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
-                if (bgImg != null) { bgImg.Dispose(); }
-                bgImg = Image.FromStream(stream);
-                this.pictureBox.BackgroundImage = bgImg;///
-                i++;
+                try//修复卡死问题？
+                {
+                    if (i >= count)
+                    {
+                        i = 0;
+                    }
+                    gif.SelectActiveFrame(fd, i);
+                    System.IO.Stream stream = new System.IO.MemoryStream();
+                    gif.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                    if (bgImg != null)
+                    {
+                        bgImg.Dispose();
+                    }
+                    bgImg = Image.FromStream(stream);
+                    this.pictureBox.BackgroundImage = bgImg;///
+                    i++;
+                }
+                catch { MessageBox.Show("BOOM!"); }//用于测试的代码
             };
             giftimer.Start();
         }
@@ -84,7 +92,8 @@ namespace NetMonitor
                 netRecv = (int)(interfaceStats.BytesReceived - double.Parse(Lable_TotalDown.Text));
                 Lable_TotalUP.Text = interfaceStats.BytesSent.ToString();
                 Lable_TotalDown.Text = interfaceStats.BytesReceived.ToString();
-                if(netRecv==0&&netSend==0)
+                System.Diagnostics.Debug.WriteLine(ComboBox.SelectedIndex.ToString());
+                if (netRecv==0&&netSend==0)
                 {
                     ZreoTimes++;
                 }
@@ -92,18 +101,16 @@ namespace NetMonitor
                 {
                     ZreoTimes = 0;
                 }
-                if(ZreoTimes>=10)
+                if(ZreoTimes>=5)
                 {
-                    ComboBox.SelectedIndex++;
-                    if (ComboBox.SelectedIndex > NetworkInterfacesLength)
+                    try//修复网卡不能自动选择问题
+                    {
+                        ComboBox.SelectedIndex++;
+                    }
+                    catch
                     {
                         ComboBox.SelectedIndex = 0;
                     }
-                    //else
-                    //{
-                    //    ComboBox.SelectedIndex++;
-                    //}
-
                 }
 
             }
@@ -160,16 +167,17 @@ namespace NetMonitor
             for (int i = 0; i < nicArr.Length; i++)
             {
                 ComboBox.Items.Add(nicArr[i].Name);
-                NetworkInterfacesLength++;
             }
             ComboBox.SelectedIndex = 0;
             
         }
-
         private void NetMonitor_Load(object sender, EventArgs e)
         {
             this.panel.BackColor = this.Lable_SpeedUP.BackColor = this.Lable_SpeedDown.BackColor = Color.FromArgb(0, 120, 215);
-            SetGifBackground();
+            this.Invoke((EventHandler)delegate
+            {
+                SetGifBackground();
+            });
         }
 
         private void NetMonitor_MouseDown(object sender, MouseEventArgs e)
