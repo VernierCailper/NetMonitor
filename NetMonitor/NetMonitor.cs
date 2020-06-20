@@ -56,6 +56,7 @@ namespace NetMonitor
             giftimer.Interval = 120;//这里是可以调节速度的
             int i = 0;
             Image bgImg = null;
+            System.IO.Stream stream = new System.IO.MemoryStream();
             giftimer.Tick += (s, e) =>
             {
                 try//修复卡死问题？
@@ -65,7 +66,6 @@ namespace NetMonitor
                         i = 0;
                     }
                     gif.SelectActiveFrame(fd, i);
-                    System.IO.Stream stream = new System.IO.MemoryStream();
                     gif.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
                     if (bgImg != null)
                     {
