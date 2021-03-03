@@ -4,6 +4,7 @@ using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Timers;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace NetMonitor
 {
@@ -44,6 +45,7 @@ namespace NetMonitor
             this.Invoke((EventHandler)delegate
             {
                 UpdateNetworkInterface();
+                Thread.Sleep(0);
             });
         }
 
@@ -59,8 +61,6 @@ namespace NetMonitor
             System.IO.Stream stream = new System.IO.MemoryStream();
             giftimer.Tick += (s, e) =>
             {
-                try//修复卡死问题？
-                {
                     if (i >= count)
                     {
                         i = 0;
@@ -74,8 +74,7 @@ namespace NetMonitor
                     bgImg = Image.FromStream(stream);
                     this.pictureBox.BackgroundImage = bgImg;///
                     i++;
-                }
-                catch { MessageBox.Show("BOOM!"); }//用于测试的代码
+                Thread.Sleep(0);
             };
             giftimer.Start();
         }
@@ -88,7 +87,7 @@ namespace NetMonitor
             IPv4InterfaceStatistics interfaceStats = nic.GetIPv4Statistics();
             if (InterfaceSelect == ComboBox.SelectedIndex&&Start)
             {
-                netSend = (int)(interfaceStats.BytesSent - double.Parse(Lable_TotalUP.Text));//这个时是干扰？
+                netSend = (int)(interfaceStats.BytesSent - double.Parse(Lable_TotalUP.Text));//这个是干扰？
                 netRecv = (int)(interfaceStats.BytesReceived - double.Parse(Lable_TotalDown.Text));
                 Lable_TotalUP.Text = interfaceStats.BytesSent.ToString();
                 Lable_TotalDown.Text = interfaceStats.BytesReceived.ToString();
@@ -112,7 +111,6 @@ namespace NetMonitor
                         ComboBox.SelectedIndex = 0;
                     }
                 }
-
             }
             else
             {
@@ -121,8 +119,7 @@ namespace NetMonitor
                 Lable_TotalUP.Text = interfaceStats.BytesSent.ToString();
                 Lable_TotalDown.Text = interfaceStats.BytesReceived.ToString();
                 InterfaceSelect = ComboBox.SelectedIndex;
-                Start = !Start;
-                
+                Start = !Start;  
             }
 
             string netRecvText = "";
@@ -195,7 +192,6 @@ namespace NetMonitor
                 {
                     base.Dispose();//这个是啥？我忘了
                     Application.Exit();
-
                 }
 
             }
